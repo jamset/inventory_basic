@@ -1,0 +1,20 @@
+{
+  "name": "jamset/inventory_basic",
+  "description": "Basic additional classes (such as classes with constants) for common purposes",
+  "require": {
+    "php": ">=5.4.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jam Set",
+      "email": "jamset@joinger.org"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "FractalBasic\\Inventory\\": "src/"
+    }
+  }
+}
