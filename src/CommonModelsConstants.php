@@ -29,5 +29,10 @@ class CommonModelsConstants
     const PORTS_TABLE_NAME_LC = 'ports';
     const COMMANDS_QUEUE_TABLE_NAME_LC = 'commands_queue';
 
+    const MAIL_LISTS_TABLE_NAME_LC = 'mail_lists';
+    const SUBSCRIPTIONS_TABLE_NAME_LC = 'subscriptions';
+
+    const USERS_TABLE_NAME_LC = 'users';
+
 
 }

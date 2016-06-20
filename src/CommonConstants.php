@@ -199,6 +199,45 @@ class CommonConstants
 
     const TCP_LOCALHOST_PREFIX = 'tcp://127.0.0.1:';
 
+    const LIST_NAME_LC = 'list_name';
+    const SUBSCRIPTION_SOURCE_LC = 'subscription_source';
+    const EMAIL_LC = 'email';
+    const FIRST_NAME_LC = 'first_name';
+    const LAST_NAME_LC = 'last_name';
+    const MAIL_LISTS_ID_LC = 'mail_lists_id';
+
+    const CASCADE_LC = 'cascade';
+    const LOGIN_LC = 'login';
+    const PASS_LC = 'pass';
+    const USER_ID_LC = 'user_id';
+
+    const ERROR_STATE = 'ERROR_STATE';
+    const MESSAGE = 'MESSAGE';
+    const CODE = 'CODE';
+    const MAX_UNIQUE_SIZE_UTF8_MB4 = 190;
+    const STATE_CODE = 'STATE_CODE';
+
+    const REQUIRED_LC = 'required';
+    const MAX_LS = 'max';
+    const NUMERIC_LC = 'numeric';
+    const INTEGER_LC = 'integer';
+    const HOST_LC = 'host';
+    const STRING_LC = 'string';
+
+    const EMAIL_CONFIRMED_LC = 'email_confirmed';
+    const EMAIL_CONFIRMATION_CODE_LC = 'email_confirmation_code';
+    const PHONE_LC = 'phone';
+    const PHONE_CONFIRMED_LC = 'phone_confirmed';
+    const PHONE_CONFIRMATION_CODE_LC = 'phone_confirmation_code';
+
+    const COMMON_MAX_ATTEMPTS_SIZE = 25;
+    const HOST = 'HOST';
+    const STYLE_LC = 'style';
+    const LIGHT_LC = 'light';
+    const DARK_LC = 'dark';
+    const SSCROLL_LC = 'sscroll';
+    const BROWSER_LC = 'browser';
+
 
 
 }
