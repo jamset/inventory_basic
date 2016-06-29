@@ -10,7 +10,6 @@
       "name": "Jam Set"
     }
   ],
-  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "FractalBasic\\Inventory\\": "src/"
