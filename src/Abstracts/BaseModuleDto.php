@@ -19,28 +19,7 @@ class BaseModuleDto
     /**
      * @var string
      */
-    protected $loggerPostfix;
-
-    /**
-     * @var string
-     */
     protected $moduleName;
-
-    /**
-     * @return Logger
-     */
-    public function getLogger()
-    {
-        return $this->logger;
-    }
-
-    /**
-     * @param Logger $logger
-     */
-    public function setLogger($logger)
-    {
-        $this->logger = $logger;
-    }
 
     /**
      * @return string
@@ -59,19 +38,24 @@ class BaseModuleDto
     }
 
     /**
-     * @return string
+     * @return Logger
      */
-    public function getLoggerPostfix()
+    public function getLogger()
     {
-        return $this->loggerPostfix;
+        return ($this->logger) ?: new Logger($this->moduleName . "| Default logger");
     }
 
     /**
-     * @param string $loggerPostfix
+     * @param Logger $logger
      */
-    public function setLoggerPostfix($loggerPostfix)
+    public function setLogger(Logger $logger)
     {
-        $this->loggerPostfix = $loggerPostfix;
+        $this->logger = $logger;
+    }
+
+    public function getLoggerPostfix()
+    {
+        return " | " . ($this->moduleName) ?: "module-name-doesn't-set";
     }
 
 
