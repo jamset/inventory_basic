@@ -7,6 +7,7 @@
  */
 namespace FractalBasic\Inventory\Abstracts;
 
+use FractalBasic\Inventory\InitStartMethodDto;
 use Monolog\Logger;
 
 class BaseModule
@@ -61,6 +62,18 @@ class BaseModule
         } else {
             $this->logger->info($msg);
         }
+
+        return null;
+    }
+
+    /**
+     * @param InitStartMethodDto
+     * @return null
+     */
+    protected function initStartMethods(InitStartMethodDto $initDto = null)
+    {
+        $this->initLoggers();
+        $this->registerShutDown(($initDto) ? $initDto->getShutDownArg() : null);
 
         return null;
     }
