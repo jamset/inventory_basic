@@ -2,7 +2,8 @@
   "name": "jamset/inventory_basic",
   "description": "Basic additional classes (such as classes with constants) for common purposes",
   "require": {
-    "php": ">=5.5.9"
+    "php": ">=5.5.9",
+    "monolog/monolog": "^1.19"
   },
   "license": "MIT",
   "authors": [
