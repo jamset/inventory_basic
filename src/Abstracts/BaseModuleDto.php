@@ -19,7 +19,7 @@ class BaseModuleDto
     /**
      * @var string
      */
-    protected $moduleName;
+    protected $moduleName = "Default-module-name";
 
     /**
      * @return string
